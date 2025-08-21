@@ -23,7 +23,7 @@ addButton.addEventListener("click", () => {
 });
 
 // ページ読み込み時に保存されたタスクを復元
-window.omload = function() {
+window.onload = function() {
     const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
     const list = document.getElementById('todo-list');
     tasks.forEach(task => {
